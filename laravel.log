@@ -1,0 +1,1931 @@
+Scanning bounced email-address...
+bounced email-address count: 3
+Scanning unsubscribe email-address...
+unsubscribe email-address count: 3
+Scanning bounced email-address...
+bounced email-address count: 3
+Scanning unsubscribe email-address...
+unsubscribe email-address count: 3
+Scanning bounced email-address...
+bounced email-address count: 3
+Scanning unsubscribe email-address...
+unsubscribe email-address count: 3
+Scanning bounced email-address...
+bounced email-address count: 3
+Scanning unsubscribe email-address...
+unsubscribe email-address count: 3
+Scanning bounced email-address...
+bounced email-address count: 3
+Scanning unsubscribe email-address...
+unsubscribe email-address count: 3
+Well begun is half done. - Aristotle
+Scanning bounced email-address...
+bounced email-address count: 3
+Scanning unsubscribe email-address...
+unsubscribe email-address count: 3
+Scanning bounced email-address...
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : Class 'App\Helpers' not found
+
+  at C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:59
+    55|             $mboxMail = imap_fetch_overview ($mbox, $email_number);
+    56|             $body = imap_fetchbody($mbox,$email_number,3);	//3 is 3rd attachment
+    57|             $header = imap_fetchheader($mbox,$email_number);	
+    58|             
+  > 59|             $email = Helpers::extractEmail($body); //params ( string , term-to-search )
+    60|             $this->info($email);
+    61|         }
+    62| 
+    63|
+
+  Exception trace:
+
+  1   App\Console\Commands\GetEmailBounce::handle()
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  2   call_user_func_array([])
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  Please use the argument -v to see more details.
+Scanning bounced email-address...
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : Call to undefined function App\Helpers\extractEmails()
+
+  at C:\xampp\htdocs\emailblast\app\Helpers\Helpers.php:48
+    44|         $exploded_page = explode("\n", $body);
+    45|         
+    46|         foreach($exploded_page as $item){			
+    47|             if( strpos( $item, $term ) !== false ) {
+  > 48|                 return extractEmails($body)[0];
+    49|             }				
+    50|         }
+    51|         return null;
+    52|     }
+
+  Exception trace:
+
+  1   App\Helpers\Helpers::extractEmail("Return-Path: <bounce@metrobank.co.jp>
+Message-ID: <8d17783a80a1517c70b2e9c1ff22ba6d@swift.generated>
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail1.metrobank.jp D48E61BF9FF
+DMARC-Filter: OpenDMARC Filter v1.3.2 mail1.metrobank.jp 696A81BF4E7
+Authentication-Results: mail1.metrobank.jp; dmarc=fail (p=none dis=none) header.from=metrobank.co.jp
+Authentication-Results: mail1.metrobank.jp; spf=fail smtp.mailfrom=bounce@metrobank.co.jp
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail1.metrobank.jp 696A81BF4E7
+Date: Wed, 10 Apr 2019 08:02:03 +0000
+Subject: Promotion
+From: news-letters-noreply@metrobank.co.jp
+To: invalidemail@metrobank.co.jp
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_"
+List-Unsubscribe: <http://localhost/emailblast/unsub/aW52YWxpZGVtYWlsQG1ldHJvYmFuay5jby5qcA/MTExMTE/TmV3cyBMZXR0ZXJz><mailto:unsubscribe@metrobank.co.jp?subject=News
+ Letters>
+X-Virus-Scanned: ClamAV using ClamSMTP
+
+
+--_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+[News Letters](http://localhost)
+
+Dear invalidemail@metrobank.co.jp
+=
+
+    ""   =20
+
+    Thanks, =20
+
+   =20
+
+    Laravel
+
+=C2=A9 201=
+9 Laravel - follow the link to manage subscriptions. All rights reserved.=
+
+
+
+
+--_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.=
+w3.org/1999/xhtml">
+<head>
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+</head>
+<body style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bord=
+er-box; background-color: #f5f8fa; color: #74787E; height: 100%; hyphens: a=
+uto; line-height: 1.4; margin: 0; -moz-hyphens: auto; -ms-word-break: break=
+-all; width: 100% !important; -webkit-hyphens: auto; -webkit-text-size-adju=
+st: none; word-break: break-word;">
+    <style>
+        @media  only screen and (max-width: 600px) {
+            .inner-body {
+                width: 100% !important;
+            }
+
+            .footer {
+                width: 100% !important;
+            }
+        }
+
+        @media  only screen and (max-width: 500px) {
+            .button {
+                width: 100% !important;
+            }
+        }
+    </style>
+
+    <table class=3D"wrapper" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bor=
+der-box; background-color: #f5f8fa; margin: 0; padding: 0; width: 100%; -pr=
+emailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%;"=
+>
+        <tr>
+            <td align=3D"center" style=3D"font-family: Avenir, Helvetica, s=
+ans-serif; box-sizing: border-box;">
+                <table class=3D"content" width=3D"100%" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"font-family: Avenir, Helvetica, sans-serif; box-s=
+izing: border-box; margin: 0; padding: 0; width: 100%; -premailer-cellpaddi=
+ng: 0; -premailer-cellspacing: 0; -premailer-width: 100%;">
+                    <tr>
+    <td class=3D"header" style=3D"font-family: Avenir, Helvetica, sans-seri=
+f; box-sizing: border-box; padding: 25px 0; text-align: center;">
+        <a href=3D"http://localhost" style=3D"font-family: Avenir, Helvetic=
+a, sans-serif; box-sizing: border-box; color: #bbbfc3; font-size: 19px; fon=
+t-weight: bold; text-decoration: none; text-shadow: 0 1px 0 white;">
+            News Letters
+        </a>
+    </td>
+</tr>
+
+                    <!-- Email Body -->
+                    <tr>
+                        <td class=3D"body" width=3D"100%" cellpadding=3D"0"=
+ cellspacing=3D"0" style=3D"font-family: Avenir, Helvetica, sans-serif; box=
+-sizing: border-box; background-color: #FFFFFF; border-bottom: 1px solid #E=
+DEFF2; border-top: 1px solid #EDEFF2; margin: 0; padding: 0; width: 100%; -=
+premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%=
+;">
+                            <table class=3D"inner-body" align=3D"center" wi=
+dth=3D"570" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: Aveni=
+r, Helvetica, sans-serif; box-sizing: border-box; background-color: #FFFFFF=
+; margin: 0 auto; padding: 0; width: 570px; -premailer-cellpadding: 0; -pre=
+mailer-cellspacing: 0; -premailer-width: 570px;">
+                                <!-- Body content -->
+                                <tr>
+                                    <td class=3D"content-cell" style=3D"fon=
+t-family: Avenir, Helvetica, sans-serif; box-sizing: border-box; padding: 3=
+5px;">
+                                        <p style=3D"font-family: Avenir, He=
+lvetica, sans-serif; box-sizing: border-box; color: #74787E; font-size: 16p=
+x; line-height: 1.5em; margin-top: 0; text-align: left;">Dear invalidemail@=
+metrobank.co.jp<br><br>
+"</p>
+<p style=3D"font-family: Avenir, Helvetic=
+a, sans-serif; box-sizing: border-box; color: #74787E; font-size: 16px; lin=
+e-height: 1.5em; margin-top: 0; text-align: left;"><br></p>"<br>
+Thanks,<=
+br>
+<br>
+Laravel
+
+                                       =20
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+    <td style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bo=
+rder-box;">
+        <table class=3D"footer" align=3D"center" width=3D"570" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"font-family: Avenir, Helvetica, sans-seri=
+f; box-sizing: border-box; margin: 0 auto; padding: 0; text-align: center; =
+width: 570px; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premai=
+ler-width: 570px;">
+            <tr>
+                <td class=3D"content-cell" align=3D"center" style=3D"font-f=
+amily: Avenir, Helvetica, sans-serif; box-sizing: border-box; padding: 35px=
+;">
+                    <p style=3D"font-family: Avenir, Helvetica, sans-serif;=
+ box-sizing: border-box; line-height: 1.5em; margin-top: 0; color: #AEAEAE;=
+ font-size: 12px; text-align: center;">=C2=A9 2019 Laravel - follow the lin=
+k to manage <a href=3D"http://localhost/unsub/aW52YWxpZGVtYWlsQG1ldHJvYmFua=
+y5jby5qcA/MTExMTE" style=3D"font-family: Avenir, Helvetica, sans-serif; box=
+-sizing: border-box; color: #3869D4;">subscriptions</a>. All rights reserve=
+d.</p>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+--_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_--
+
+
+")
+      C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:59
+
+  2   App\Console\Commands\GetEmailBounce::handle()
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  Please use the argument -v to see more details.
+Scanning bounced email-address...
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : Call to undefined function App\Helpers\extractEmails()
+
+  at C:\xampp\htdocs\emailblast\app\Helpers\Helpers.php:48
+    44|         $exploded_page = explode("\n", $body);
+    45|         
+    46|         foreach($exploded_page as $item){			
+    47|             if( strpos( $item, $term ) !== false ) {
+  > 48|                 return extractEmails($body)[0];
+    49|             }				
+    50|         }
+    51|         return null;
+    52|     }
+
+  Exception trace:
+
+  1   App\Helpers\Helpers::extractEmail("Return-Path: <bounce@metrobank.co.jp>
+Message-ID: <8d17783a80a1517c70b2e9c1ff22ba6d@swift.generated>
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail1.metrobank.jp D48E61BF9FF
+DMARC-Filter: OpenDMARC Filter v1.3.2 mail1.metrobank.jp 696A81BF4E7
+Authentication-Results: mail1.metrobank.jp; dmarc=fail (p=none dis=none) header.from=metrobank.co.jp
+Authentication-Results: mail1.metrobank.jp; spf=fail smtp.mailfrom=bounce@metrobank.co.jp
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail1.metrobank.jp 696A81BF4E7
+Date: Wed, 10 Apr 2019 08:02:03 +0000
+Subject: Promotion
+From: news-letters-noreply@metrobank.co.jp
+To: invalidemail@metrobank.co.jp
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_"
+List-Unsubscribe: <http://localhost/emailblast/unsub/aW52YWxpZGVtYWlsQG1ldHJvYmFuay5jby5qcA/MTExMTE/TmV3cyBMZXR0ZXJz><mailto:unsubscribe@metrobank.co.jp?subject=News
+ Letters>
+X-Virus-Scanned: ClamAV using ClamSMTP
+
+
+--_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+[News Letters](http://localhost)
+
+Dear invalidemail@metrobank.co.jp
+=
+
+    ""   =20
+
+    Thanks, =20
+
+   =20
+
+    Laravel
+
+=C2=A9 201=
+9 Laravel - follow the link to manage subscriptions. All rights reserved.=
+
+
+
+
+--_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.=
+w3.org/1999/xhtml">
+<head>
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+</head>
+<body style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bord=
+er-box; background-color: #f5f8fa; color: #74787E; height: 100%; hyphens: a=
+uto; line-height: 1.4; margin: 0; -moz-hyphens: auto; -ms-word-break: break=
+-all; width: 100% !important; -webkit-hyphens: auto; -webkit-text-size-adju=
+st: none; word-break: break-word;">
+    <style>
+        @media  only screen and (max-width: 600px) {
+            .inner-body {
+                width: 100% !important;
+            }
+
+            .footer {
+                width: 100% !important;
+            }
+        }
+
+        @media  only screen and (max-width: 500px) {
+            .button {
+                width: 100% !important;
+            }
+        }
+    </style>
+
+    <table class=3D"wrapper" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bor=
+der-box; background-color: #f5f8fa; margin: 0; padding: 0; width: 100%; -pr=
+emailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%;"=
+>
+        <tr>
+            <td align=3D"center" style=3D"font-family: Avenir, Helvetica, s=
+ans-serif; box-sizing: border-box;">
+                <table class=3D"content" width=3D"100%" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"font-family: Avenir, Helvetica, sans-serif; box-s=
+izing: border-box; margin: 0; padding: 0; width: 100%; -premailer-cellpaddi=
+ng: 0; -premailer-cellspacing: 0; -premailer-width: 100%;">
+                    <tr>
+    <td class=3D"header" style=3D"font-family: Avenir, Helvetica, sans-seri=
+f; box-sizing: border-box; padding: 25px 0; text-align: center;">
+        <a href=3D"http://localhost" style=3D"font-family: Avenir, Helvetic=
+a, sans-serif; box-sizing: border-box; color: #bbbfc3; font-size: 19px; fon=
+t-weight: bold; text-decoration: none; text-shadow: 0 1px 0 white;">
+            News Letters
+        </a>
+    </td>
+</tr>
+
+                    <!-- Email Body -->
+                    <tr>
+                        <td class=3D"body" width=3D"100%" cellpadding=3D"0"=
+ cellspacing=3D"0" style=3D"font-family: Avenir, Helvetica, sans-serif; box=
+-sizing: border-box; background-color: #FFFFFF; border-bottom: 1px solid #E=
+DEFF2; border-top: 1px solid #EDEFF2; margin: 0; padding: 0; width: 100%; -=
+premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%=
+;">
+                            <table class=3D"inner-body" align=3D"center" wi=
+dth=3D"570" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: Aveni=
+r, Helvetica, sans-serif; box-sizing: border-box; background-color: #FFFFFF=
+; margin: 0 auto; padding: 0; width: 570px; -premailer-cellpadding: 0; -pre=
+mailer-cellspacing: 0; -premailer-width: 570px;">
+                                <!-- Body content -->
+                                <tr>
+                                    <td class=3D"content-cell" style=3D"fon=
+t-family: Avenir, Helvetica, sans-serif; box-sizing: border-box; padding: 3=
+5px;">
+                                        <p style=3D"font-family: Avenir, He=
+lvetica, sans-serif; box-sizing: border-box; color: #74787E; font-size: 16p=
+x; line-height: 1.5em; margin-top: 0; text-align: left;">Dear invalidemail@=
+metrobank.co.jp<br><br>
+"</p>
+<p style=3D"font-family: Avenir, Helvetic=
+a, sans-serif; box-sizing: border-box; color: #74787E; font-size: 16px; lin=
+e-height: 1.5em; margin-top: 0; text-align: left;"><br></p>"<br>
+Thanks,<=
+br>
+<br>
+Laravel
+
+                                       =20
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+    <td style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bo=
+rder-box;">
+        <table class=3D"footer" align=3D"center" width=3D"570" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"font-family: Avenir, Helvetica, sans-seri=
+f; box-sizing: border-box; margin: 0 auto; padding: 0; text-align: center; =
+width: 570px; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premai=
+ler-width: 570px;">
+            <tr>
+                <td class=3D"content-cell" align=3D"center" style=3D"font-f=
+amily: Avenir, Helvetica, sans-serif; box-sizing: border-box; padding: 35px=
+;">
+                    <p style=3D"font-family: Avenir, Helvetica, sans-serif;=
+ box-sizing: border-box; line-height: 1.5em; margin-top: 0; color: #AEAEAE;=
+ font-size: 12px; text-align: center;">=C2=A9 2019 Laravel - follow the lin=
+k to manage <a href=3D"http://localhost/unsub/aW52YWxpZGVtYWlsQG1ldHJvYmFua=
+y5jby5qcA/MTExMTE" style=3D"font-family: Avenir, Helvetica, sans-serif; box=
+-sizing: border-box; color: #3869D4;">subscriptions</a>. All rights reserve=
+d.</p>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+--_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_--
+
+
+")
+      C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:59
+
+  2   App\Console\Commands\GetEmailBounce::handle()
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  Please use the argument -v to see more details.
+Scanning bounced email-address...
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : Call to undefined function App\Helpers\extractEmails()
+
+  at C:\xampp\htdocs\emailblast\app\Helpers\Helpers.php:48
+    44|         $exploded_page = explode("\n", $body);
+    45|         
+    46|         foreach($exploded_page as $item){			
+    47|             if( strpos( $item, $term ) !== false ) {
+  > 48|                 return extractEmails($body)[0];
+    49|             }				
+    50|         }
+    51|         return null;
+    52|     }
+
+  Exception trace:
+
+  1   App\Helpers\Helpers::extractEmail("Return-Path: <bounce@metrobank.co.jp>
+Message-ID: <8d17783a80a1517c70b2e9c1ff22ba6d@swift.generated>
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail1.metrobank.jp D48E61BF9FF
+DMARC-Filter: OpenDMARC Filter v1.3.2 mail1.metrobank.jp 696A81BF4E7
+Authentication-Results: mail1.metrobank.jp; dmarc=fail (p=none dis=none) header.from=metrobank.co.jp
+Authentication-Results: mail1.metrobank.jp; spf=fail smtp.mailfrom=bounce@metrobank.co.jp
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail1.metrobank.jp 696A81BF4E7
+Date: Wed, 10 Apr 2019 08:02:03 +0000
+Subject: Promotion
+From: news-letters-noreply@metrobank.co.jp
+To: invalidemail@metrobank.co.jp
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_"
+List-Unsubscribe: <http://localhost/emailblast/unsub/aW52YWxpZGVtYWlsQG1ldHJvYmFuay5jby5qcA/MTExMTE/TmV3cyBMZXR0ZXJz><mailto:unsubscribe@metrobank.co.jp?subject=News
+ Letters>
+X-Virus-Scanned: ClamAV using ClamSMTP
+
+
+--_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+[News Letters](http://localhost)
+
+Dear invalidemail@metrobank.co.jp
+=
+
+    ""   =20
+
+    Thanks, =20
+
+   =20
+
+    Laravel
+
+=C2=A9 201=
+9 Laravel - follow the link to manage subscriptions. All rights reserved.=
+
+
+
+
+--_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.=
+w3.org/1999/xhtml">
+<head>
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+</head>
+<body style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bord=
+er-box; background-color: #f5f8fa; color: #74787E; height: 100%; hyphens: a=
+uto; line-height: 1.4; margin: 0; -moz-hyphens: auto; -ms-word-break: break=
+-all; width: 100% !important; -webkit-hyphens: auto; -webkit-text-size-adju=
+st: none; word-break: break-word;">
+    <style>
+        @media  only screen and (max-width: 600px) {
+            .inner-body {
+                width: 100% !important;
+            }
+
+            .footer {
+                width: 100% !important;
+            }
+        }
+
+        @media  only screen and (max-width: 500px) {
+            .button {
+                width: 100% !important;
+            }
+        }
+    </style>
+
+    <table class=3D"wrapper" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bor=
+der-box; background-color: #f5f8fa; margin: 0; padding: 0; width: 100%; -pr=
+emailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%;"=
+>
+        <tr>
+            <td align=3D"center" style=3D"font-family: Avenir, Helvetica, s=
+ans-serif; box-sizing: border-box;">
+                <table class=3D"content" width=3D"100%" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"font-family: Avenir, Helvetica, sans-serif; box-s=
+izing: border-box; margin: 0; padding: 0; width: 100%; -premailer-cellpaddi=
+ng: 0; -premailer-cellspacing: 0; -premailer-width: 100%;">
+                    <tr>
+    <td class=3D"header" style=3D"font-family: Avenir, Helvetica, sans-seri=
+f; box-sizing: border-box; padding: 25px 0; text-align: center;">
+        <a href=3D"http://localhost" style=3D"font-family: Avenir, Helvetic=
+a, sans-serif; box-sizing: border-box; color: #bbbfc3; font-size: 19px; fon=
+t-weight: bold; text-decoration: none; text-shadow: 0 1px 0 white;">
+            News Letters
+        </a>
+    </td>
+</tr>
+
+                    <!-- Email Body -->
+                    <tr>
+                        <td class=3D"body" width=3D"100%" cellpadding=3D"0"=
+ cellspacing=3D"0" style=3D"font-family: Avenir, Helvetica, sans-serif; box=
+-sizing: border-box; background-color: #FFFFFF; border-bottom: 1px solid #E=
+DEFF2; border-top: 1px solid #EDEFF2; margin: 0; padding: 0; width: 100%; -=
+premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%=
+;">
+                            <table class=3D"inner-body" align=3D"center" wi=
+dth=3D"570" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: Aveni=
+r, Helvetica, sans-serif; box-sizing: border-box; background-color: #FFFFFF=
+; margin: 0 auto; padding: 0; width: 570px; -premailer-cellpadding: 0; -pre=
+mailer-cellspacing: 0; -premailer-width: 570px;">
+                                <!-- Body content -->
+                                <tr>
+                                    <td class=3D"content-cell" style=3D"fon=
+t-family: Avenir, Helvetica, sans-serif; box-sizing: border-box; padding: 3=
+5px;">
+                                        <p style=3D"font-family: Avenir, He=
+lvetica, sans-serif; box-sizing: border-box; color: #74787E; font-size: 16p=
+x; line-height: 1.5em; margin-top: 0; text-align: left;">Dear invalidemail@=
+metrobank.co.jp<br><br>
+"</p>
+<p style=3D"font-family: Avenir, Helvetic=
+a, sans-serif; box-sizing: border-box; color: #74787E; font-size: 16px; lin=
+e-height: 1.5em; margin-top: 0; text-align: left;"><br></p>"<br>
+Thanks,<=
+br>
+<br>
+Laravel
+
+                                       =20
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+    <td style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bo=
+rder-box;">
+        <table class=3D"footer" align=3D"center" width=3D"570" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"font-family: Avenir, Helvetica, sans-seri=
+f; box-sizing: border-box; margin: 0 auto; padding: 0; text-align: center; =
+width: 570px; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premai=
+ler-width: 570px;">
+            <tr>
+                <td class=3D"content-cell" align=3D"center" style=3D"font-f=
+amily: Avenir, Helvetica, sans-serif; box-sizing: border-box; padding: 35px=
+;">
+                    <p style=3D"font-family: Avenir, Helvetica, sans-serif;=
+ box-sizing: border-box; line-height: 1.5em; margin-top: 0; color: #AEAEAE;=
+ font-size: 12px; text-align: center;">=C2=A9 2019 Laravel - follow the lin=
+k to manage <a href=3D"http://localhost/unsub/aW52YWxpZGVtYWlsQG1ldHJvYmFua=
+y5jby5qcA/MTExMTE" style=3D"font-family: Avenir, Helvetica, sans-serif; box=
+-sizing: border-box; color: #3869D4;">subscriptions</a>. All rights reserve=
+d.</p>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+--_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_--
+
+
+")
+      C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:59
+
+  2   App\Console\Commands\GetEmailBounce::handle()
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  Please use the argument -v to see more details.
+Scanning bounced email-address...
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : Call to undefined function App\Helpers\extractEmails()
+
+  at C:\xampp\htdocs\emailblast\app\Helpers\Helpers.php:48
+    44|         $exploded_page = explode("\n", $body);
+    45|         
+    46|         foreach($exploded_page as $item){			
+    47|             if( strpos( $item, $term ) !== false ) {
+  > 48|                 return extractEmails($body)[0];
+    49|             }				
+    50|         }
+    51|         return null;
+    52|     }
+
+  Exception trace:
+
+  1   App\Helpers\Helpers::extractEmail("Return-Path: <bounce@metrobank.co.jp>
+Message-ID: <8d17783a80a1517c70b2e9c1ff22ba6d@swift.generated>
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail1.metrobank.jp D48E61BF9FF
+DMARC-Filter: OpenDMARC Filter v1.3.2 mail1.metrobank.jp 696A81BF4E7
+Authentication-Results: mail1.metrobank.jp; dmarc=fail (p=none dis=none) header.from=metrobank.co.jp
+Authentication-Results: mail1.metrobank.jp; spf=fail smtp.mailfrom=bounce@metrobank.co.jp
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail1.metrobank.jp 696A81BF4E7
+Date: Wed, 10 Apr 2019 08:02:03 +0000
+Subject: Promotion
+From: news-letters-noreply@metrobank.co.jp
+To: invalidemail@metrobank.co.jp
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_"
+List-Unsubscribe: <http://localhost/emailblast/unsub/aW52YWxpZGVtYWlsQG1ldHJvYmFuay5jby5qcA/MTExMTE/TmV3cyBMZXR0ZXJz><mailto:unsubscribe@metrobank.co.jp?subject=News
+ Letters>
+X-Virus-Scanned: ClamAV using ClamSMTP
+
+
+--_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+[News Letters](http://localhost)
+
+Dear invalidemail@metrobank.co.jp
+=
+
+    ""   =20
+
+    Thanks, =20
+
+   =20
+
+    Laravel
+
+=C2=A9 201=
+9 Laravel - follow the link to manage subscriptions. All rights reserved.=
+
+
+
+
+--_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.=
+w3.org/1999/xhtml">
+<head>
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+</head>
+<body style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bord=
+er-box; background-color: #f5f8fa; color: #74787E; height: 100%; hyphens: a=
+uto; line-height: 1.4; margin: 0; -moz-hyphens: auto; -ms-word-break: break=
+-all; width: 100% !important; -webkit-hyphens: auto; -webkit-text-size-adju=
+st: none; word-break: break-word;">
+    <style>
+        @media  only screen and (max-width: 600px) {
+            .inner-body {
+                width: 100% !important;
+            }
+
+            .footer {
+                width: 100% !important;
+            }
+        }
+
+        @media  only screen and (max-width: 500px) {
+            .button {
+                width: 100% !important;
+            }
+        }
+    </style>
+
+    <table class=3D"wrapper" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bor=
+der-box; background-color: #f5f8fa; margin: 0; padding: 0; width: 100%; -pr=
+emailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%;"=
+>
+        <tr>
+            <td align=3D"center" style=3D"font-family: Avenir, Helvetica, s=
+ans-serif; box-sizing: border-box;">
+                <table class=3D"content" width=3D"100%" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"font-family: Avenir, Helvetica, sans-serif; box-s=
+izing: border-box; margin: 0; padding: 0; width: 100%; -premailer-cellpaddi=
+ng: 0; -premailer-cellspacing: 0; -premailer-width: 100%;">
+                    <tr>
+    <td class=3D"header" style=3D"font-family: Avenir, Helvetica, sans-seri=
+f; box-sizing: border-box; padding: 25px 0; text-align: center;">
+        <a href=3D"http://localhost" style=3D"font-family: Avenir, Helvetic=
+a, sans-serif; box-sizing: border-box; color: #bbbfc3; font-size: 19px; fon=
+t-weight: bold; text-decoration: none; text-shadow: 0 1px 0 white;">
+            News Letters
+        </a>
+    </td>
+</tr>
+
+                    <!-- Email Body -->
+                    <tr>
+                        <td class=3D"body" width=3D"100%" cellpadding=3D"0"=
+ cellspacing=3D"0" style=3D"font-family: Avenir, Helvetica, sans-serif; box=
+-sizing: border-box; background-color: #FFFFFF; border-bottom: 1px solid #E=
+DEFF2; border-top: 1px solid #EDEFF2; margin: 0; padding: 0; width: 100%; -=
+premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%=
+;">
+                            <table class=3D"inner-body" align=3D"center" wi=
+dth=3D"570" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: Aveni=
+r, Helvetica, sans-serif; box-sizing: border-box; background-color: #FFFFFF=
+; margin: 0 auto; padding: 0; width: 570px; -premailer-cellpadding: 0; -pre=
+mailer-cellspacing: 0; -premailer-width: 570px;">
+                                <!-- Body content -->
+                                <tr>
+                                    <td class=3D"content-cell" style=3D"fon=
+t-family: Avenir, Helvetica, sans-serif; box-sizing: border-box; padding: 3=
+5px;">
+                                        <p style=3D"font-family: Avenir, He=
+lvetica, sans-serif; box-sizing: border-box; color: #74787E; font-size: 16p=
+x; line-height: 1.5em; margin-top: 0; text-align: left;">Dear invalidemail@=
+metrobank.co.jp<br><br>
+"</p>
+<p style=3D"font-family: Avenir, Helvetic=
+a, sans-serif; box-sizing: border-box; color: #74787E; font-size: 16px; lin=
+e-height: 1.5em; margin-top: 0; text-align: left;"><br></p>"<br>
+Thanks,<=
+br>
+<br>
+Laravel
+
+                                       =20
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+    <td style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bo=
+rder-box;">
+        <table class=3D"footer" align=3D"center" width=3D"570" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"font-family: Avenir, Helvetica, sans-seri=
+f; box-sizing: border-box; margin: 0 auto; padding: 0; text-align: center; =
+width: 570px; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premai=
+ler-width: 570px;">
+            <tr>
+                <td class=3D"content-cell" align=3D"center" style=3D"font-f=
+amily: Avenir, Helvetica, sans-serif; box-sizing: border-box; padding: 35px=
+;">
+                    <p style=3D"font-family: Avenir, Helvetica, sans-serif;=
+ box-sizing: border-box; line-height: 1.5em; margin-top: 0; color: #AEAEAE;=
+ font-size: 12px; text-align: center;">=C2=A9 2019 Laravel - follow the lin=
+k to manage <a href=3D"http://localhost/unsub/aW52YWxpZGVtYWlsQG1ldHJvYmFua=
+y5jby5qcA/MTExMTE" style=3D"font-family: Avenir, Helvetica, sans-serif; box=
+-sizing: border-box; color: #3869D4;">subscriptions</a>. All rights reserve=
+d.</p>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+--_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_--
+
+
+")
+      C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:59
+
+  2   App\Console\Commands\GetEmailBounce::handle()
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  Please use the argument -v to see more details.
+Scanning bounced email-address...
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : Call to undefined function App\Helpers\extractEmails()
+
+  at C:\xampp\htdocs\emailblast\app\Helpers\Helpers.php:48
+    44|         $exploded_page = explode("\n", $body);
+    45|         
+    46|         foreach($exploded_page as $item){			
+    47|             if( strpos( $item, $term ) !== false ) {
+  > 48|                 return extractEmails($body)[0];
+    49|             }				
+    50|         }
+    51|         return null;
+    52|     }
+
+  Exception trace:
+
+  1   App\Helpers\Helpers::extractEmail("Return-Path: <bounce@metrobank.co.jp>
+Message-ID: <8d17783a80a1517c70b2e9c1ff22ba6d@swift.generated>
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail1.metrobank.jp D48E61BF9FF
+DMARC-Filter: OpenDMARC Filter v1.3.2 mail1.metrobank.jp 696A81BF4E7
+Authentication-Results: mail1.metrobank.jp; dmarc=fail (p=none dis=none) header.from=metrobank.co.jp
+Authentication-Results: mail1.metrobank.jp; spf=fail smtp.mailfrom=bounce@metrobank.co.jp
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail1.metrobank.jp 696A81BF4E7
+Date: Wed, 10 Apr 2019 08:02:03 +0000
+Subject: Promotion
+From: news-letters-noreply@metrobank.co.jp
+To: invalidemail@metrobank.co.jp
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_"
+List-Unsubscribe: <http://localhost/emailblast/unsub/aW52YWxpZGVtYWlsQG1ldHJvYmFuay5jby5qcA/MTExMTE/TmV3cyBMZXR0ZXJz><mailto:unsubscribe@metrobank.co.jp?subject=News
+ Letters>
+X-Virus-Scanned: ClamAV using ClamSMTP
+
+
+--_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+[News Letters](http://localhost)
+
+Dear invalidemail@metrobank.co.jp
+=
+
+    ""   =20
+
+    Thanks, =20
+
+   =20
+
+    Laravel
+
+=C2=A9 201=
+9 Laravel - follow the link to manage subscriptions. All rights reserved.=
+
+
+
+
+--_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.=
+w3.org/1999/xhtml">
+<head>
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+</head>
+<body style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bord=
+er-box; background-color: #f5f8fa; color: #74787E; height: 100%; hyphens: a=
+uto; line-height: 1.4; margin: 0; -moz-hyphens: auto; -ms-word-break: break=
+-all; width: 100% !important; -webkit-hyphens: auto; -webkit-text-size-adju=
+st: none; word-break: break-word;">
+    <style>
+        @media  only screen and (max-width: 600px) {
+            .inner-body {
+                width: 100% !important;
+            }
+
+            .footer {
+                width: 100% !important;
+            }
+        }
+
+        @media  only screen and (max-width: 500px) {
+            .button {
+                width: 100% !important;
+            }
+        }
+    </style>
+
+    <table class=3D"wrapper" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bor=
+der-box; background-color: #f5f8fa; margin: 0; padding: 0; width: 100%; -pr=
+emailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%;"=
+>
+        <tr>
+            <td align=3D"center" style=3D"font-family: Avenir, Helvetica, s=
+ans-serif; box-sizing: border-box;">
+                <table class=3D"content" width=3D"100%" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"font-family: Avenir, Helvetica, sans-serif; box-s=
+izing: border-box; margin: 0; padding: 0; width: 100%; -premailer-cellpaddi=
+ng: 0; -premailer-cellspacing: 0; -premailer-width: 100%;">
+                    <tr>
+    <td class=3D"header" style=3D"font-family: Avenir, Helvetica, sans-seri=
+f; box-sizing: border-box; padding: 25px 0; text-align: center;">
+        <a href=3D"http://localhost" style=3D"font-family: Avenir, Helvetic=
+a, sans-serif; box-sizing: border-box; color: #bbbfc3; font-size: 19px; fon=
+t-weight: bold; text-decoration: none; text-shadow: 0 1px 0 white;">
+            News Letters
+        </a>
+    </td>
+</tr>
+
+                    <!-- Email Body -->
+                    <tr>
+                        <td class=3D"body" width=3D"100%" cellpadding=3D"0"=
+ cellspacing=3D"0" style=3D"font-family: Avenir, Helvetica, sans-serif; box=
+-sizing: border-box; background-color: #FFFFFF; border-bottom: 1px solid #E=
+DEFF2; border-top: 1px solid #EDEFF2; margin: 0; padding: 0; width: 100%; -=
+premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%=
+;">
+                            <table class=3D"inner-body" align=3D"center" wi=
+dth=3D"570" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: Aveni=
+r, Helvetica, sans-serif; box-sizing: border-box; background-color: #FFFFFF=
+; margin: 0 auto; padding: 0; width: 570px; -premailer-cellpadding: 0; -pre=
+mailer-cellspacing: 0; -premailer-width: 570px;">
+                                <!-- Body content -->
+                                <tr>
+                                    <td class=3D"content-cell" style=3D"fon=
+t-family: Avenir, Helvetica, sans-serif; box-sizing: border-box; padding: 3=
+5px;">
+                                        <p style=3D"font-family: Avenir, He=
+lvetica, sans-serif; box-sizing: border-box; color: #74787E; font-size: 16p=
+x; line-height: 1.5em; margin-top: 0; text-align: left;">Dear invalidemail@=
+metrobank.co.jp<br><br>
+"</p>
+<p style=3D"font-family: Avenir, Helvetic=
+a, sans-serif; box-sizing: border-box; color: #74787E; font-size: 16px; lin=
+e-height: 1.5em; margin-top: 0; text-align: left;"><br></p>"<br>
+Thanks,<=
+br>
+<br>
+Laravel
+
+                                       =20
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+    <td style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bo=
+rder-box;">
+        <table class=3D"footer" align=3D"center" width=3D"570" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"font-family: Avenir, Helvetica, sans-seri=
+f; box-sizing: border-box; margin: 0 auto; padding: 0; text-align: center; =
+width: 570px; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premai=
+ler-width: 570px;">
+            <tr>
+                <td class=3D"content-cell" align=3D"center" style=3D"font-f=
+amily: Avenir, Helvetica, sans-serif; box-sizing: border-box; padding: 35px=
+;">
+                    <p style=3D"font-family: Avenir, Helvetica, sans-serif;=
+ box-sizing: border-box; line-height: 1.5em; margin-top: 0; color: #AEAEAE;=
+ font-size: 12px; text-align: center;">=C2=A9 2019 Laravel - follow the lin=
+k to manage <a href=3D"http://localhost/unsub/aW52YWxpZGVtYWlsQG1ldHJvYmFua=
+y5jby5qcA/MTExMTE" style=3D"font-family: Avenir, Helvetica, sans-serif; box=
+-sizing: border-box; color: #3869D4;">subscriptions</a>. All rights reserve=
+d.</p>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+--_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_--
+
+
+")
+      C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:59
+
+  2   App\Console\Commands\GetEmailBounce::handle()
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  Please use the argument -v to see more details.
+Scanning bounced email-address...
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : Call to undefined function App\Helpers\extractEmails()
+
+  at C:\xampp\htdocs\emailblast\app\Helpers\Helpers.php:48
+    44|         $exploded_page = explode("\n", $body);
+    45|         
+    46|         foreach($exploded_page as $item){			
+    47|             if( strpos( $item, $term ) !== false ) {
+  > 48|                 return extractEmails($body)[0];
+    49|             }				
+    50|         }
+    51|         return null;
+    52|     }
+
+  Exception trace:
+
+  1   App\Helpers\Helpers::extractEmail("Return-Path: <bounce@metrobank.co.jp>
+Message-ID: <8d17783a80a1517c70b2e9c1ff22ba6d@swift.generated>
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail1.metrobank.jp D48E61BF9FF
+DMARC-Filter: OpenDMARC Filter v1.3.2 mail1.metrobank.jp 696A81BF4E7
+Authentication-Results: mail1.metrobank.jp; dmarc=fail (p=none dis=none) header.from=metrobank.co.jp
+Authentication-Results: mail1.metrobank.jp; spf=fail smtp.mailfrom=bounce@metrobank.co.jp
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail1.metrobank.jp 696A81BF4E7
+Date: Wed, 10 Apr 2019 08:02:03 +0000
+Subject: Promotion
+From: news-letters-noreply@metrobank.co.jp
+To: invalidemail@metrobank.co.jp
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_"
+List-Unsubscribe: <http://localhost/emailblast/unsub/aW52YWxpZGVtYWlsQG1ldHJvYmFuay5jby5qcA/MTExMTE/TmV3cyBMZXR0ZXJz><mailto:unsubscribe@metrobank.co.jp?subject=News
+ Letters>
+X-Virus-Scanned: ClamAV using ClamSMTP
+
+
+--_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+[News Letters](http://localhost)
+
+Dear invalidemail@metrobank.co.jp
+=
+
+    ""   =20
+
+    Thanks, =20
+
+   =20
+
+    Laravel
+
+=C2=A9 201=
+9 Laravel - follow the link to manage subscriptions. All rights reserved.=
+
+
+
+
+--_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.=
+w3.org/1999/xhtml">
+<head>
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+</head>
+<body style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bord=
+er-box; background-color: #f5f8fa; color: #74787E; height: 100%; hyphens: a=
+uto; line-height: 1.4; margin: 0; -moz-hyphens: auto; -ms-word-break: break=
+-all; width: 100% !important; -webkit-hyphens: auto; -webkit-text-size-adju=
+st: none; word-break: break-word;">
+    <style>
+        @media  only screen and (max-width: 600px) {
+            .inner-body {
+                width: 100% !important;
+            }
+
+            .footer {
+                width: 100% !important;
+            }
+        }
+
+        @media  only screen and (max-width: 500px) {
+            .button {
+                width: 100% !important;
+            }
+        }
+    </style>
+
+    <table class=3D"wrapper" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bor=
+der-box; background-color: #f5f8fa; margin: 0; padding: 0; width: 100%; -pr=
+emailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%;"=
+>
+        <tr>
+            <td align=3D"center" style=3D"font-family: Avenir, Helvetica, s=
+ans-serif; box-sizing: border-box;">
+                <table class=3D"content" width=3D"100%" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"font-family: Avenir, Helvetica, sans-serif; box-s=
+izing: border-box; margin: 0; padding: 0; width: 100%; -premailer-cellpaddi=
+ng: 0; -premailer-cellspacing: 0; -premailer-width: 100%;">
+                    <tr>
+    <td class=3D"header" style=3D"font-family: Avenir, Helvetica, sans-seri=
+f; box-sizing: border-box; padding: 25px 0; text-align: center;">
+        <a href=3D"http://localhost" style=3D"font-family: Avenir, Helvetic=
+a, sans-serif; box-sizing: border-box; color: #bbbfc3; font-size: 19px; fon=
+t-weight: bold; text-decoration: none; text-shadow: 0 1px 0 white;">
+            News Letters
+        </a>
+    </td>
+</tr>
+
+                    <!-- Email Body -->
+                    <tr>
+                        <td class=3D"body" width=3D"100%" cellpadding=3D"0"=
+ cellspacing=3D"0" style=3D"font-family: Avenir, Helvetica, sans-serif; box=
+-sizing: border-box; background-color: #FFFFFF; border-bottom: 1px solid #E=
+DEFF2; border-top: 1px solid #EDEFF2; margin: 0; padding: 0; width: 100%; -=
+premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%=
+;">
+                            <table class=3D"inner-body" align=3D"center" wi=
+dth=3D"570" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: Aveni=
+r, Helvetica, sans-serif; box-sizing: border-box; background-color: #FFFFFF=
+; margin: 0 auto; padding: 0; width: 570px; -premailer-cellpadding: 0; -pre=
+mailer-cellspacing: 0; -premailer-width: 570px;">
+                                <!-- Body content -->
+                                <tr>
+                                    <td class=3D"content-cell" style=3D"fon=
+t-family: Avenir, Helvetica, sans-serif; box-sizing: border-box; padding: 3=
+5px;">
+                                        <p style=3D"font-family: Avenir, He=
+lvetica, sans-serif; box-sizing: border-box; color: #74787E; font-size: 16p=
+x; line-height: 1.5em; margin-top: 0; text-align: left;">Dear invalidemail@=
+metrobank.co.jp<br><br>
+"</p>
+<p style=3D"font-family: Avenir, Helvetic=
+a, sans-serif; box-sizing: border-box; color: #74787E; font-size: 16px; lin=
+e-height: 1.5em; margin-top: 0; text-align: left;"><br></p>"<br>
+Thanks,<=
+br>
+<br>
+Laravel
+
+                                       =20
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+    <td style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bo=
+rder-box;">
+        <table class=3D"footer" align=3D"center" width=3D"570" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"font-family: Avenir, Helvetica, sans-seri=
+f; box-sizing: border-box; margin: 0 auto; padding: 0; text-align: center; =
+width: 570px; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premai=
+ler-width: 570px;">
+            <tr>
+                <td class=3D"content-cell" align=3D"center" style=3D"font-f=
+amily: Avenir, Helvetica, sans-serif; box-sizing: border-box; padding: 35px=
+;">
+                    <p style=3D"font-family: Avenir, Helvetica, sans-serif;=
+ box-sizing: border-box; line-height: 1.5em; margin-top: 0; color: #AEAEAE;=
+ font-size: 12px; text-align: center;">=C2=A9 2019 Laravel - follow the lin=
+k to manage <a href=3D"http://localhost/unsub/aW52YWxpZGVtYWlsQG1ldHJvYmFua=
+y5jby5qcA/MTExMTE" style=3D"font-family: Avenir, Helvetica, sans-serif; box=
+-sizing: border-box; color: #3869D4;">subscriptions</a>. All rights reserve=
+d.</p>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+--_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_--
+
+
+")
+      C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:59
+
+  2   App\Console\Commands\GetEmailBounce::handle()
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  Please use the argument -v to see more details.
+Scanning bounced email-address...
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : Call to undefined function App\Helpers\extractEmails()
+
+  at C:\xampp\htdocs\emailblast\app\Helpers\Helpers.php:48
+    44|         $exploded_page = explode("\n", $body);
+    45|         
+    46|         foreach($exploded_page as $item){			
+    47|             if( strpos( $item, $term ) !== false ) {
+  > 48|                 return extractEmails($body)[0];
+    49|             }				
+    50|         }
+    51|         return null;
+    52|     }
+
+  Exception trace:
+
+  1   App\Helpers\Helpers::extractEmail("Return-Path: <bounce@metrobank.co.jp>
+Message-ID: <8d17783a80a1517c70b2e9c1ff22ba6d@swift.generated>
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail1.metrobank.jp D48E61BF9FF
+DMARC-Filter: OpenDMARC Filter v1.3.2 mail1.metrobank.jp 696A81BF4E7
+Authentication-Results: mail1.metrobank.jp; dmarc=fail (p=none dis=none) header.from=metrobank.co.jp
+Authentication-Results: mail1.metrobank.jp; spf=fail smtp.mailfrom=bounce@metrobank.co.jp
+DKIM-Filter: OpenDKIM Filter v2.11.0 mail1.metrobank.jp 696A81BF4E7
+Date: Wed, 10 Apr 2019 08:02:03 +0000
+Subject: Promotion
+From: news-letters-noreply@metrobank.co.jp
+To: invalidemail@metrobank.co.jp
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_"
+List-Unsubscribe: <http://localhost/emailblast/unsub/aW52YWxpZGVtYWlsQG1ldHJvYmFuay5jby5qcA/MTExMTE/TmV3cyBMZXR0ZXJz><mailto:unsubscribe@metrobank.co.jp?subject=News
+ Letters>
+X-Virus-Scanned: ClamAV using ClamSMTP
+
+
+--_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+[News Letters](http://localhost)
+
+Dear invalidemail@metrobank.co.jp
+=
+
+    ""   =20
+
+    Thanks, =20
+
+   =20
+
+    Laravel
+
+=C2=A9 201=
+9 Laravel - follow the link to manage subscriptions. All rights reserved.=
+
+
+
+
+--_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.=
+w3.org/1999/xhtml">
+<head>
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0">
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8=
+">
+</head>
+<body style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bord=
+er-box; background-color: #f5f8fa; color: #74787E; height: 100%; hyphens: a=
+uto; line-height: 1.4; margin: 0; -moz-hyphens: auto; -ms-word-break: break=
+-all; width: 100% !important; -webkit-hyphens: auto; -webkit-text-size-adju=
+st: none; word-break: break-word;">
+    <style>
+        @media  only screen and (max-width: 600px) {
+            .inner-body {
+                width: 100% !important;
+            }
+
+            .footer {
+                width: 100% !important;
+            }
+        }
+
+        @media  only screen and (max-width: 500px) {
+            .button {
+                width: 100% !important;
+            }
+        }
+    </style>
+
+    <table class=3D"wrapper" width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bor=
+der-box; background-color: #f5f8fa; margin: 0; padding: 0; width: 100%; -pr=
+emailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%;"=
+>
+        <tr>
+            <td align=3D"center" style=3D"font-family: Avenir, Helvetica, s=
+ans-serif; box-sizing: border-box;">
+                <table class=3D"content" width=3D"100%" cellpadding=3D"0" c=
+ellspacing=3D"0" style=3D"font-family: Avenir, Helvetica, sans-serif; box-s=
+izing: border-box; margin: 0; padding: 0; width: 100%; -premailer-cellpaddi=
+ng: 0; -premailer-cellspacing: 0; -premailer-width: 100%;">
+                    <tr>
+    <td class=3D"header" style=3D"font-family: Avenir, Helvetica, sans-seri=
+f; box-sizing: border-box; padding: 25px 0; text-align: center;">
+        <a href=3D"http://localhost" style=3D"font-family: Avenir, Helvetic=
+a, sans-serif; box-sizing: border-box; color: #bbbfc3; font-size: 19px; fon=
+t-weight: bold; text-decoration: none; text-shadow: 0 1px 0 white;">
+            News Letters
+        </a>
+    </td>
+</tr>
+
+                    <!-- Email Body -->
+                    <tr>
+                        <td class=3D"body" width=3D"100%" cellpadding=3D"0"=
+ cellspacing=3D"0" style=3D"font-family: Avenir, Helvetica, sans-serif; box=
+-sizing: border-box; background-color: #FFFFFF; border-bottom: 1px solid #E=
+DEFF2; border-top: 1px solid #EDEFF2; margin: 0; padding: 0; width: 100%; -=
+premailer-cellpadding: 0; -premailer-cellspacing: 0; -premailer-width: 100%=
+;">
+                            <table class=3D"inner-body" align=3D"center" wi=
+dth=3D"570" cellpadding=3D"0" cellspacing=3D"0" style=3D"font-family: Aveni=
+r, Helvetica, sans-serif; box-sizing: border-box; background-color: #FFFFFF=
+; margin: 0 auto; padding: 0; width: 570px; -premailer-cellpadding: 0; -pre=
+mailer-cellspacing: 0; -premailer-width: 570px;">
+                                <!-- Body content -->
+                                <tr>
+                                    <td class=3D"content-cell" style=3D"fon=
+t-family: Avenir, Helvetica, sans-serif; box-sizing: border-box; padding: 3=
+5px;">
+                                        <p style=3D"font-family: Avenir, He=
+lvetica, sans-serif; box-sizing: border-box; color: #74787E; font-size: 16p=
+x; line-height: 1.5em; margin-top: 0; text-align: left;">Dear invalidemail@=
+metrobank.co.jp<br><br>
+"</p>
+<p style=3D"font-family: Avenir, Helvetic=
+a, sans-serif; box-sizing: border-box; color: #74787E; font-size: 16px; lin=
+e-height: 1.5em; margin-top: 0; text-align: left;"><br></p>"<br>
+Thanks,<=
+br>
+<br>
+Laravel
+
+                                       =20
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+    <td style=3D"font-family: Avenir, Helvetica, sans-serif; box-sizing: bo=
+rder-box;">
+        <table class=3D"footer" align=3D"center" width=3D"570" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"font-family: Avenir, Helvetica, sans-seri=
+f; box-sizing: border-box; margin: 0 auto; padding: 0; text-align: center; =
+width: 570px; -premailer-cellpadding: 0; -premailer-cellspacing: 0; -premai=
+ler-width: 570px;">
+            <tr>
+                <td class=3D"content-cell" align=3D"center" style=3D"font-f=
+amily: Avenir, Helvetica, sans-serif; box-sizing: border-box; padding: 35px=
+;">
+                    <p style=3D"font-family: Avenir, Helvetica, sans-serif;=
+ box-sizing: border-box; line-height: 1.5em; margin-top: 0; color: #AEAEAE;=
+ font-size: 12px; text-align: center;">=C2=A9 2019 Laravel - follow the lin=
+k to manage <a href=3D"http://localhost/unsub/aW52YWxpZGVtYWlsQG1ldHJvYmFua=
+y5jby5qcA/MTExMTE" style=3D"font-family: Avenir, Helvetica, sans-serif; box=
+-sizing: border-box; color: #3869D4;">subscriptions</a>. All rights reserve=
+d.</p>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+--_=_swift_1554883323_7c816b8d8197b01254197e0f41d94263_=_--
+
+
+")
+      C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:59
+
+  2   App\Console\Commands\GetEmailBounce::handle()
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  Please use the argument -v to see more details.
+Scanning bounced email-address...
+email 
+
+   ErrorException  : Undefined offset: 0
+
+  at C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:69
+    65|                if( strpos( $item, $term ) !== false ) {
+    66|                 $email =  preg_match_all("/[\._a-zA-Z0-9-]+@[\._a-zA-Z0-9-]+/i", $body, $matches)[0];
+    67|                }				
+    68|            }
+  > 69|            $this->info("email ". $email[0]);
+    70| 
+    71|         }
+    72|         
+    73|         imap_close($mbox);
+
+  Exception trace:
+
+  1   Illuminate\Foundation\Bootstrap\HandleExceptions::handleError("Undefined offset: 0", "C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php")
+      C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:69
+
+  2   App\Console\Commands\GetEmailBounce::handle()
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  Please use the argument -v to see more details.
+Scanning bounced email-address...
+email 
+
+   ErrorException  : Array to string conversion
+
+  at C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:69
+    65|                if( strpos( $item, $term ) !== false ) {
+    66|                 $email =  preg_match_all("/[\._a-zA-Z0-9-]+@[\._a-zA-Z0-9-]+/i", $body, $matches)[0];
+    67|                }				
+    68|            }
+  > 69|            $this->info("email ". $email);
+    70| 
+    71|         }
+    72|         
+    73|         imap_close($mbox);
+
+  Exception trace:
+
+  1   Illuminate\Foundation\Bootstrap\HandleExceptions::handleError("Array to string conversion", "C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php")
+      C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:69
+
+  2   App\Console\Commands\GetEmailBounce::handle()
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  Please use the argument -v to see more details.
+Scanning bounced email-address...
+email 
+
+   ErrorException  : Array to string conversion
+
+  at C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:70
+    66|                 $email =  preg_match_all("/[\._a-zA-Z0-9-]+@[\._a-zA-Z0-9-]+/i", $body, $matches)[0];
+    67|                }				
+    68|            }
+    69|            if(empty( $email)) {
+  > 70|             $this->info("email ".$email);
+    71|            }
+    72|            
+    73| 
+    74|         }
+
+  Exception trace:
+
+  1   Illuminate\Foundation\Bootstrap\HandleExceptions::handleError("Array to string conversion", "C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php")
+      C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:70
+
+  2   App\Console\Commands\GetEmailBounce::handle()
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  Please use the argument -v to see more details.
+Scanning bounced email-address...
+bounced email-address count: 3
+
+   BadMethodCallException  : Method App\Console\Commands\GetEmailBounce::fire does not exist.
+
+  at C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Support\Traits\Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("fire", [])
+      C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:78
+
+  2   App\Console\Commands\GetEmailBounce::handle()
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  Please use the argument -v to see more details.
+Scanning bounced email-address...
+bounced email-address count: 3
+
+   BadMethodCallException  : Method App\Console\Commands\GetEmailBounce::fire does not exist.
+
+  at C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Support\Traits\Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("fire", [])
+      C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:77
+
+  2   App\Console\Commands\GetEmailBounce::handle()
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  Please use the argument -v to see more details.
+Scanning bounced email-address...
+email 
+email 
+bounced email-address count: 3
+
+   BadMethodCallException  : Method App\Console\Commands\GetEmailBounce::fire does not exist.
+
+  at C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Support\Traits\Macroable.php:100
+     96|      */
+     97|     public function __call($method, $parameters)
+     98|     {
+     99|         if (! static::hasMacro($method)) {
+  > 100|             throw new BadMethodCallException(sprintf(
+    101|                 'Method %s::%s does not exist.', static::class, $method
+    102|             ));
+    103|         }
+    104|
+
+  Exception trace:
+
+  1   Illuminate\Console\Command::__call("fire", [])
+      C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:75
+
+  2   App\Console\Commands\GetEmailBounce::handle()
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  Please use the argument -v to see more details.
+Scanning bounced email-address...
+email 
+email 
+bounced email-address count: 3
+Scanning bounced email-address...
+bounced email-address count: 3
+Scanning bounced email-address...
+bounced email-address count:  2 
+Scanning bounced email-address...
+email 
+email 
+bounced email-address count:  2 
+Scanning bounced email-address...
+email 
+email 
+bounced email-address count:  2 
+Scanning bounced email-address...
+email 
+email 
+bounced email-address count:  2 
+Scanning bounced email-address...
+email 
+email 
+bounced email-address count:  2 
+Scanning bounced email-address...
+bounced email-address count:  2 
+Scanning bounced email-address...
+
+   ErrorException  : Array to string conversion
+
+  at C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:69
+    65|            foreach($exploded_page as $item){			
+    66|                if( false !== strpos( $item , $term )  ) {
+    67|                     preg_match_all("/[\._a-zA-Z0-9-]+@[\._a-zA-Z0-9-]+/i", $item, $matches);
+    68|                
+  > 69|                         $this->info("bounced email ". $matches[0]);
+    70|                     $count ++;
+    71|                 }				
+    72|            }
+    73|         }
+
+  Exception trace:
+
+  1   Illuminate\Foundation\Bootstrap\HandleExceptions::handleError("Array to string conversion", "C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php")
+      C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:69
+
+  2   App\Console\Commands\GetEmailBounce::handle()
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  Please use the argument -v to see more details.
+Scanning bounced email-address...
+
+   ErrorException  : Array to string conversion
+
+  at C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:69
+    65|            foreach($exploded_page as $item){			
+    66|                if( false !== strpos( $item , $term )  ) {
+    67|                     preg_match_all("/[\._a-zA-Z0-9-]+@[\._a-zA-Z0-9-]+/i", $item, $matches)[0];
+    68|                
+  > 69|                         $this->info("bounced email ". $matches[0]);
+    70|                     $count ++;
+    71|                 }				
+    72|            }
+    73|         }
+
+  Exception trace:
+
+  1   Illuminate\Foundation\Bootstrap\HandleExceptions::handleError("Array to string conversion", "C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php")
+      C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:69
+
+  2   App\Console\Commands\GetEmailBounce::handle()
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  Please use the argument -v to see more details.
+Scanning bounced email-address...
+
+   ErrorException  : Array to string conversion
+
+  at C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:69
+    65|            foreach($exploded_page as $item){			
+    66|                if( false !== strpos( $item , $term )  ) {
+    67|                     preg_match_all("/[\._a-zA-Z0-9-]+@[\._a-zA-Z0-9-]+/i", $item, $matches)[0];
+    68|                
+  > 69|                         $this->info("bounced email ". $matches);
+    70|                     $count ++;
+    71|                 }				
+    72|            }
+    73|         }
+
+  Exception trace:
+
+  1   Illuminate\Foundation\Bootstrap\HandleExceptions::handleError("Array to string conversion", "C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php")
+      C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:69
+
+  2   App\Console\Commands\GetEmailBounce::handle()
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  Please use the argument -v to see more details.
+Scanning bounced email-address...
+
+   ErrorException  : Array to string conversion
+
+  at C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:69
+    65|            foreach($exploded_page as $item){			
+    66|                if( false !== strpos( $item , $term )  ) {
+    67|                     preg_match_all("/[\._a-zA-Z0-9-]+@[\._a-zA-Z0-9-]+/i", $item, $matches)[0];
+    68|                
+  > 69|                         $this->info("bounced email ". $matches);
+    70|                     $count ++;
+    71|                 }				
+    72|            }
+    73|         }
+
+  Exception trace:
+
+  1   Illuminate\Foundation\Bootstrap\HandleExceptions::handleError("Array to string conversion", "C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php")
+      C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:69
+
+  2   App\Console\Commands\GetEmailBounce::handle()
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  Please use the argument -v to see more details.
+Scanning bounced email-address...
+bounced email invalidemail@metrobank.co.jp
+bounced email invalidemail@metrobank.co.jp
+bounced email-address count:  2 
+Scanning bounced email-address...
+bounced email invalidemail@metrobank.co.jp
+bounced email invalidemail@metrobank.co.jp
+bounced email-address count:  2 
+Scanning bounced email-address...
+bounced email :invalidemail@metrobank.co.jp
+bounced email :invalidemail@metrobank.co.jp
+bounced email-address count:  2 
+Scanning bounced email-address...
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : Class 'App\Helpers' not found
+
+  at C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:69
+    65|            foreach($exploded_page as $item){			
+    66|                if( false !== strpos( $item , $term )  ) {
+    67|                     preg_match_all("/[\._a-zA-Z0-9-]+@[\._a-zA-Z0-9-]+/i", $item, $matches);
+    68|                     $email = $matches[0];               
+  > 69|                     if(Helpers::isEmailValid($email[0])) {
+    70|                         $unsubscribe = Unsubscribe::firstOrCreate(['email' , $email[0]], 
+    71|                                                 ['unsubscription' => 'ALL' , 'pin'=>'0000000' ]);
+    72|                         $unsubscribe->save();
+    73|                         $count ++;
+
+  Exception trace:
+
+  1   App\Console\Commands\GetEmailBounce::handle()
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  2   call_user_func_array([])
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  Please use the argument -v to see more details.
+Scanning bounced email-address...
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : Class 'App\Helpers' not found
+
+  at C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailBounce.php:69
+    65|            foreach($exploded_page as $item){			
+    66|                if( false !== strpos( $item , $term )  ) {
+    67|                     preg_match_all("/[\._a-zA-Z0-9-]+@[\._a-zA-Z0-9-]+/i", $item, $matches);
+    68|                     $email = $matches[0];               
+  > 69|                     if(Helpers::isEmailValid($email[0])) {
+    70|                         $unsubscribe = Unsubscribe::firstOrNew(['email' , $email[0]]);
+    71|                         $unsubscribe->unsubscription = 'ALL';
+    72|                         $unsubscribe->pin = '000000';
+    73|                         $unsubscribe->save();
+
+  Exception trace:
+
+  1   App\Console\Commands\GetEmailBounce::handle()
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  2   call_user_func_array([])
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  Please use the argument -v to see more details.
+Scanning bounced email-address...
+bounced email-address count:  0 
+Scanning bounced email-address...
+bounced email-address count:  0 
+Scanning bounced email-address...
+
+   Illuminate\Database\QueryException  : SQLSTATE[42S22]: Column not found: 1054 Unknown column '0' in 'where clause' (SQL: select * from `unsubscribes` where (`0` = email and `1` = invalidemail@metrobank.co.jp) limit 1)
+
+  at C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Database\Connection.php:664
+    660|         // If an exception occurs when attempting to run a query, we'll format the error
+    661|         // message to include the bindings with SQL, which will make this exception a
+    662|         // lot more helpful to the developer instead of just the database's errors.
+    663|         catch (Exception $e) {
+  > 664|             throw new QueryException(
+    665|                 $query, $this->prepareBindings($bindings), $e
+    666|             );
+    667|         }
+    668|
+
+  Exception trace:
+
+  1   Doctrine\DBAL\Driver\PDOException::("SQLSTATE[42S22]: Column not found: 1054 Unknown column '0' in 'where clause'")
+      C:\xampp\htdocs\emailblast\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOConnection.php:63
+
+  2   PDOException::("SQLSTATE[42S22]: Column not found: 1054 Unknown column '0' in 'where clause'")
+      C:\xampp\htdocs\emailblast\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOConnection.php:61
+
+  Please use the argument -v to see more details.
+Scanning bounced email-address...
+
+   Illuminate\Database\QueryException  : SQLSTATE[42S22]: Column not found: 1054 Unknown column '0' in 'where clause' (SQL: select * from `unsubscribes` where (`0` = email and `1` = invalidemail@metrobank.co.jp) limit 1)
+
+  at C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Database\Connection.php:664
+    660|         // If an exception occurs when attempting to run a query, we'll format the error
+    661|         // message to include the bindings with SQL, which will make this exception a
+    662|         // lot more helpful to the developer instead of just the database's errors.
+    663|         catch (Exception $e) {
+  > 664|             throw new QueryException(
+    665|                 $query, $this->prepareBindings($bindings), $e
+    666|             );
+    667|         }
+    668|
+
+  Exception trace:
+
+  1   Doctrine\DBAL\Driver\PDOException::("SQLSTATE[42S22]: Column not found: 1054 Unknown column '0' in 'where clause'")
+      C:\xampp\htdocs\emailblast\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOConnection.php:63
+
+  2   PDOException::("SQLSTATE[42S22]: Column not found: 1054 Unknown column '0' in 'where clause'")
+      C:\xampp\htdocs\emailblast\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOConnection.php:61
+
+  Please use the argument -v to see more details.
+Scanning bounced email-address...
+bounced email-address count:  2 
+Scanning bounced email-address...
+Number of messages in inbox: 3
+bounced email-address updated count:  0 
+Scanning unsubscribe email-address...
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : Class 'App\Console\Commands\Unsubscribe' not found
+
+  at C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailUnsubscribe.php:66
+    62|            foreach($exploded_page as $item){			
+    63|                if( false !== strpos( $item , $term )  ) {
+    64|                     preg_match_all("/[\._a-zA-Z0-9-]+@[\._a-zA-Z0-9-]+/i", $item, $matches);
+    65|                     $email = $matches[0];                                 
+  > 66|                     $data = Unsubscribe::updateOrCreate(['email' =>$email[0], 'pin'=> '000000' ] ,
+    67|                     [ 'unsubscription'=> 'ALL' ]);      
+    68|                     // If true then the actual row in the database has been modified
+    69|                     $wasCreated = $data->wasRecentlyCreated;                     
+    70|                     $wasChanged = $data->wasChanged();
+
+  Exception trace:
+
+  1   App\Console\Commands\GetEmailUnsubscribe::handle()
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  2   call_user_func_array([])
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  Please use the argument -v to see more details.
+Scanning bounced email-address...
+Number of messages in inbox: 3
+bounced email-address updated count:  0 
+Scanning unsubscribe email-address...
+bounced email-address updated count:  0 
+Scanning bounced email-address...
+Number of messages in inbox: 3
+bounced email-address updated count:  0 
+Scanning unsubscribe email-address...
+Number of messages in inbox: 3
+bounced email-address updated count:  0 
+Scanning bounced email-address...
+Number of messages in inbox: 3
+bounced email-address updated count:  0 
+Scanning unsubscribe email-address...
+
+   ErrorException  : imap_open(): Couldn't open stream {mail01.metrobank.co.jp:110/pop3/tls/novalidate-cert}
+
+  at C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailUnsubscribe.php:49
+    45|         $username = 'unsubscr1b3d';
+    46|         $password = 'Passw0rd.unsubscr1b3d';
+    47| 
+    48|         /* try to connect */
+  > 49|         $mbox = imap_open( $hostname, $username , $password) or die('Cannot connect to mail: ' . imap_last_error());
+    50|         // get information about the current mailbox (INBOX in this case)
+    51| 
+    52|         $mboxCheck = imap_check($mbox); // check hasEmail
+    53|         $this->info("Number of messages in inbox: ". $mboxCheck->Nmsgs);
+
+  Exception trace:
+
+  1   imap_open("{mail01.metrobank.co.jp:110/pop3/tls/novalidate-cert}", "unsubscr1b3d", "Passw0rd.unsubscr1b3d")
+      C:\xampp\htdocs\emailblast\app\Console\Commands\GetEmailUnsubscribe.php:49
+
+  2   App\Console\Commands\GetEmailUnsubscribe::handle()
+      C:\xampp\htdocs\emailblast\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:29
+
+  Please use the argument -v to see more details.
+
+   Whoops\Exception\ErrorException  : Unknown: Authentication failed. (errflg=1)
+
+  at Unknown:0
+    1|
+
+  Exception trace:
+
+  1   Whoops\Run::handleError("Unknown: Authentication failed. (errflg=1)", "Unknown")
+      [internal]:0
+Scanning bounced email-address...
+Number of messages in inbox: 0
+PHP Fatal error:  Uncaught ErrorException: Unknown: Mailbox is empty (errflg=1) in Unknown:0
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Unknown: Mailbo...', 'Unknown', 0, NULL)
+#1 {main}
+  thrown in Unknown on line 0
+Scanning unsubscribe email-address...
+Number of messages in inbox: 0
+PHP Fatal error:  Uncaught ErrorException: Unknown: Mailbox is empty (errflg=1) in Unknown:0
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Unknown: Mailbo...', 'Unknown', 0, NULL)
+#1 {main}
+  thrown in Unknown on line 0
+Scanning bounced email-address...
+Number of messages in inbox: 0
+PHP Fatal error:  Uncaught ErrorException: Unknown: Mailbox is empty (errflg=1) in Unknown:0
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Unknown: Mailbo...', 'Unknown', 0, NULL)
+#1 {main}
+  thrown in Unknown on line 0
+Scanning unsubscribe email-address...
+Number of messages in inbox: 0
+PHP Fatal error:  Uncaught ErrorException: Unknown: Mailbox is empty (errflg=1) in Unknown:0
+Stack trace:
+#0 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Unknown: Mailbo...', 'Unknown', 0, NULL)
+#1 {main}
+  thrown in Unknown on line 0
+Scanning bounced email-address...
+Number of messages in inbox: 0
+emptyScanning unsubscribe email-address...
+Number of messages in inbox: 0
+empty

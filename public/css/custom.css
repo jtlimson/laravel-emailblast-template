@@ -1,0 +1,12 @@
+.status_0:after {
+    content: 'empty';
+}
+.status_1:after {
+    content: 'ready';
+}
+.status_2:after {
+    content: 'queued';
+}
+.status_3:after {
+    content: 'sent';
+}
