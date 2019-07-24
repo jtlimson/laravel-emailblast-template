@@ -1,3 +1,7 @@
+## Issues
+
+- Please submit a issue if you found one and having trouble running the app.
+
 ## FUNCTIONS
 - Import mailing list (see sample-csv-import.csv)
 - batch mailing-list. (e.g.)  
