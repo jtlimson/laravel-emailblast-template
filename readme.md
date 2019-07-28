@@ -29,8 +29,8 @@
 - run artisan generate key $bash>php artisan key:generate
 - run migrate $bash>php artisan migrate
 - import mailing list url http://url/import
-- run artisan queue $bash> `php artisan queue:work` or `php artisan queue:work`
-- start blasting -> http://url/sbc/list
+- to enable the sending run the $run artisan queue $bash> `php artisan queue:work` or `php artisan queue:work`
+- start broadcasting the eomail at -> http://url/sbc/list
 
 ## ROUTES
 - blast = base_url/sbc/list
