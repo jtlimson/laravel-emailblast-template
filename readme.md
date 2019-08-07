@@ -26,10 +26,10 @@
   1. `MAIL_RETURN_PATH =` return path where bounced mail will be sent
   2. `MAIL_UNSUBSCRIBE =` unsubscribe mail
   3. `MAIL_ADMIN =` admin email address
-- run artisan generate key $bash>php artisan key:generate
-- run migrate $bash>php artisan migrate
+- run artisan generate key $bash>`php artisan key:generate`
+- run migrate $bash>`php artisan migrate`
 - import mailing list url http://url/import
-- to enable the sending run the $run artisan queue $bash> `php artisan queue:work` or `php artisan queue:work`
+- to enable the sending run the artisan queue $bash> `php artisan queue:work` or `php artisan queue:work`
 - start broadcasting the eomail at -> http://url/sbc/list
 
 ## ROUTES
