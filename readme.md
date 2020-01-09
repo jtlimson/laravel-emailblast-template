@@ -1,6 +1,3 @@
-## Issues
-
-- Please submit a issue if you found one and having trouble running the app.
 
 ## FUNCTIONS
 - Import mailing list (see sample-csv-import.csv)
@@ -29,7 +26,7 @@
 - run artisan generate key $bash>`php artisan key:generate`
 - run migrate $bash>`php artisan migrate`
 - import mailing list url http://url/import
-- to enable the sending run the artisan queue $bash> `php artisan queue:work` or `php artisan queue:work`
+- to enable the worker. Run the artisan queue $bash> `php artisan queue:work` or `php artisan queue:work`
 - start broadcasting the eomail at -> http://url/sbc/list
 
 ## ROUTES
