@@ -954,7 +954,7 @@
                 "symfony/console": "^4.1",
                 "symfony/debug": "^4.1",
                 "symfony/finder": "^4.1",
-                "symfony/http-foundation": "^4.1",
+                "symfony/http-foundation": "^4.4.7",
                 "symfony/http-kernel": "^4.1",
                 "symfony/process": "^4.1",
                 "symfony/routing": "^4.1",
