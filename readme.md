@@ -1,3 +1,6 @@
+## Deploy Environment
+
+this app is set-up in apache environment. Deploy in apache Server. `Not artisan`
 
 ## FUNCTIONS
 - Import mailing list (see sample-csv-import.csv)
